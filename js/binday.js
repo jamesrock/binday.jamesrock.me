@@ -1,6 +1,6 @@
 (function() {
 
-	var 
+	var
 	today = new Date(),
 	// today = new Date(2017, 1, 3),
 	// today = new Date(2017, 1, 10),
@@ -26,8 +26,8 @@
 	message,
 	className;
 
-	console.log(today);
-	console.log(week);
+	// console.log(today);
+	// console.log(week);
 
 	body.appendChild(node);
 
