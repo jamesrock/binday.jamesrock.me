@@ -2,20 +2,14 @@
 
 	var
 	today = new Date(),
-	// today = new Date(2017, 1, 3),
-	// today = new Date(2017, 1, 10),
-	// today = new Date(2017, 1, 17),
-	// today = new Date(2017, 1, 24),
-	// today = new Date(2017, 2, 9),
-	// today = new Date(2017, 1, 5),
-	// today = new Date(2017, 2, 5),
+	// today = new Date(2017, 5, 23),
+	// today = new Date(2017, 5, 30),
 	year = new Date().getFullYear(),
 	firstday = new Date(year, 0, 1),
 	day = 86400000,
 	getWeek = function(date) {
 
 		// week runs from sunday to saturday
-
 		return Math.ceil((((date - firstday) / day) + firstday.getDay() + 1) / 7);
 
 	},
@@ -33,14 +27,14 @@
 
 	if(isEven) {
 
-		message = "it's blue week. this week it's food, paper/cardboard in clear bags, the green box, and clothes in clear bags to go out.";
-		className = "blue";
+		message = "it's green week. this week it's food, clear bags and garden sacks to go out.";
+		className = "green";
 
 	}
 	else {
 
-		message = "it's green week. this week it's food, plastic and garden waste to go out.";
-		className = "green";
+		message = "it's blue week. this week it's food, black bags and the green box to go out.";
+		className = "blue";
 
 	};
 
